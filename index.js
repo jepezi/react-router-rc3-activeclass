@@ -9,11 +9,11 @@ class App extends Component {
     return <div>
       <h1>App</h1>
       <ul>
-        <li><IndexLink id="overviewLink" to="/" activeClassName="active">Home</IndexLink></li>
-        <li><Link id="contactLink" to="/product_category" activeClassName="active">Category</Link></li>
-        <li><Link id="productsLink" to="/product_category/new" activeClassName="active">New Category</Link></li>
-        <li><Link id="productsIndexLink" to="/product_category/1" activeClassName="active">Category 1</Link></li>
-        <li><Link id="specificProductLink" to="/login" activeClassName="active">login</Link></li>
+        <li><IndexLink to="/" activeClassName="active">Home</IndexLink></li>
+        <li><Link to="/product_category" activeClassName="active">Category</Link></li>
+        <li><Link to="/product_category/new" activeClassName="active">New Category</Link></li>
+        <li><Link to="/product_category/1" activeClassName="active">Category 1</Link></li>
+        <li><Link to="/login" activeClassName="active">login</Link></li>
       </ul>
       {this.props.children}
     </div>;
