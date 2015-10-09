@@ -59,7 +59,7 @@ class NotFound extends Component {
 
 const routes =
 {component: App, childRoutes: [
-  {path: '/', component: Wrapper, indexRoute: Home, childRoutes: [
+  {path: '/', component: Wrapper, indexRoute: {component: Home}, childRoutes: [
     {path: 'product_category', component: ProductCategory, childRoutes: [
       {path: 'new', component: ProductCategoryForm},
       {path: ':id', component: ProductCategoryForm},
